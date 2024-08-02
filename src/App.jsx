@@ -81,7 +81,7 @@ useEffect(() => {
             </Modal>
 
 
-      <div className="mt-5">
+      <div className="add-btn">
       <Button  className='mb-2 ' onClick={makeAddModalAppear}>Add New Client </Button>
       </div>
         <ul className="cards">
