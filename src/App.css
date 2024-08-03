@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -8,6 +8,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh; 
+  background-color: #f0f0f0; 
 }
 
 .cards {
@@ -15,25 +17,35 @@ body {
   background-color: black;
   border-radius: 10px;
   list-style: none;
-  height: auto;
-  width: auto;
   padding: 20px;
+  width: auto; 
+  max-width: 600px; 
 }
 
 li {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  margin: 20px;
+  margin: 20px 0;
   padding: 20px;
   background-color: rgb(51, 78, 78);
   border-radius: 10px;
   color: white;
+  flex-wrap: nowrap; 
+}
+
+.client-info {
+  flex-grow: 1;
+  margin-right: 40px; 
+  white-space: nowrap; 
+}
+
+.btn-cta {
+  display: flex;
+  gap: 10px; 
 }
 
 .add-btn {
   margin-top: 10px;
   margin-left: 90px;
 }
-
-
