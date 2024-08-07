@@ -1,5 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import ClientAddModal from './ClientAddModal.jsx'
+import { NavLink } from 'react-router-dom';
 
 const Clients = () => {
   const [client, setClient] = useState([]);
@@ -138,6 +140,10 @@ const Clients = () => {
             <div className="btn-cta">
               <Button onClick={() => makeUpdateModalAppear(c)}>Update</Button>
               <Button onClick={() => deleteClient(c.id)}>Delete</Button>
+
+              <NavLink to={"/client/"+c.id} className={"btn btn-secondary"} >
+                                    View Client
+                                </NavLink>
             </div>
           </li>
         ))}
